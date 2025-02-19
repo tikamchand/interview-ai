@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@interview-ai/ai-service": ["libs/ai-service/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
