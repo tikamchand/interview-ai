@@ -5,14 +5,12 @@ export default defineConfig({
   e2e: {
     ...nxE2EPreset(__filename, {
       cypressDir: 'src',
-      bundler: 'vite',
       webServerCommands: {
         default: 'npx nx run frontend:dev',
-        production: 'npx nx run frontend:preview',
       },
-      ciWebServerCommand: 'npx nx run frontend:preview',
-      ciBaseUrl: 'http://localhost:4300',
+      ciWebServerCommand: 'npx nx run frontend:start',
+      ciBaseUrl: 'http://localhost:3000',
     }),
-    baseUrl: 'http://localhost:4200',
+    baseUrl: 'http://127.0.0.1:3000',
   },
 });
